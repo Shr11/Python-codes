@@ -7,5 +7,5 @@ def evenWords(s):
         if len(word)%2==0:
             
             print(word)
-string= "I am shraddha."
+string= input()
 evenWords(string)
