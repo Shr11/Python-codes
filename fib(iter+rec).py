@@ -7,7 +7,7 @@ def fib(n):
         
     elif n<0 :
         print("Enter valid number")
-        
+        return n
         
         
     else:
@@ -23,7 +23,8 @@ def fib_iter(n):
         return 0
         
     elif n<0:
-        print("Incorrect entry!")   
+        print("Incorrect entry!") 
+        return -1  
         
     elif n==1:
         return b
@@ -35,8 +36,13 @@ def fib_iter(n):
         b=y
       return b
         
-        
-        
-print("fibonacci of 7 is ", fib(-7))  
-print("fibonacci of 7 is ", fib_iter(7))  
+n = int(input())        
 
+if n==-1:
+  pass
+else:  
+  input("fibonacci of ", n ,"is ", fib(n))  
+
+input(("fibonacci of",n,"is ", fib_iter(n)))
+
+ 
